@@ -3,10 +3,10 @@ import { Consumo } from "./Consumo"
 
 export default function App() {
   const [consumo, setConsumo] = useState(0);
-  const [nivel, setNivel] = useState("bajo");
+  const [nivel, setNivel] = useState("lento");
 
   const sumar = () => {
-    setConsumo(c => (c <300? c + 10: 300));
+    setConsumo(c => (c <120? c + 5: 120));
   };
 
   const restar = () => {
@@ -14,9 +14,9 @@ export default function App() {
   };
 
   useEffect(() => {
-    if (consumo < 100) setNivel("bajo");
-    else if (consumo <= 300) setNivel("medio");
-    else setNivel("alto");
+    if (consumo < 30) setNivel("lento");
+    else if (consumo <= 80) setNivel("medio");
+    else setNivel("rapido");
   }, [consumo]);
 
   return (
