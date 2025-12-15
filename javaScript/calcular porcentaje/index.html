@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de porcentaje</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+        #resultado {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .error {
+            color: red;
+        }
+        .ok {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora de porcentaje</h1>
+
+    <label>Número base:</label><br>
+    <input type="number" id="numeroBase"><br><br>
+
+    <label>Porcentaje (%):</label><br>
+    <input type="number" id="porcentaje"><br><br>
+
+    <button id="btnCalcular">Calcular</button>
+
+    <p id="resultado">Resultado: </p>
+    <p id="mensaje"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

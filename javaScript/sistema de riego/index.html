@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>sistema de riego</h1>
+
+    <h2>Registro tiempo de riego</h2>
+
+    <select  id="sector">
+        
+        <option value="A">Sector A</option>
+        <option value="B">Sector B</option>
+    </select>
+
+    <label >
+        tiempo de riego (minutos)
+        <input type="number" id="minutos">
+    </label>
+
+    <button id="agregar">Agregar</button>
+
+
+    <div>
+        <h3>Sector A</h3>
+        tiempos:
+        <ul id="listaA"></ul>
+        <p id="totalA">Total de tiempos </p>
+        <p id="promedioA">Promedio de tiempos: </p>
+    </div>
+
+    <div>
+        <h3>Sector B</h3>
+        tiempos:
+        <ul id="listaB"></ul>
+        <p id="totalB">Total de tiempos </p>
+        <p id="promedioB">Promedio de tiempos: </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+Enunciado (similar al original pero diferente):
+
+Desarrollar una página web que permita controlar la temperatura de un termostato ficticio, con estas características:
+
+La temperatura inicia en 20°C.
+
+No puede bajar de 10°C ni subir de 30°C.
+
+Debe mostrar siempre la temperatura actual.
+
+Debe tener 3 botones:
+
+Subir temperatura
+
+Bajar temperatura
+
+Resetear a 20°C
+
+Los botones deben habilitarse/deshabilitarse automáticamente si se llega al límite.
+
+Debajo mostrar:
+
+Un mensaje indicando si la temperatura es Baja, Normal o Alta.
+
+Un historial con cada acción realizada (subir, bajar, reset), indicando fecha – hora – acción – temperatura resultante.
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Temperatura</title>
+</head>
+<body>
+    <h1>Termostato</h1>
+
+    <h2>Temperatura actual: <span id="tempActual">20</span>°C</h2>
+
+    <button id="btnDown">- Bajar</button>
+    <button id="btnUp">+ Subir</button>
+    <button id="btnReset">Resetear</button>
+
+    <p id="estadoTemp"></p>
+
+    <h3>Historial de acciones</h3>
+    <ul id="historial"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

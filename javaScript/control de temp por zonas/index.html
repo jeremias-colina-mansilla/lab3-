@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>temperaturas medidad en dos zonas</h1>
+    <div>
+        <select id="sectores">
+            <option value="zs">Zona norte </option>
+            <option value="zn">Zona Sur</option>
+        </select>
+        <label >
+            ingrese una temperatura en grados elcios
+            <input id="temp" type="number">
+        </label>
+
+        <button id="agregar">Agregar</button>
+    </div>
+
+    <div>
+        <section>
+            <h3>Zona Sur</h3>
+            <ul id="zonaS"></ul>
+            <p id="total-zs">total: 0</p>
+            <p id="prom-zs">promedio: 0</p>
+            <p id="estado-zs">estado termico: </p>
+        </section>
+    </div>
+
+    <div>
+        <section>
+            <h3>Zona Norte</h3>
+            <ul id="zonaN"></ul>
+            <p id="total-zn">total: 0</p>
+            <p id="prom-zn">promedio: 0</p>
+            <p id="estado-zn">estado termico: </p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

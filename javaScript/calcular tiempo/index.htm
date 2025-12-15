@@ -1,0 +1,63 @@
+Enunciado:
+Crear una página en HTML + JS que tenga un temporizador regresivo.
+Debe permitir:
+
+Ingresar la cantidad de segundos a contar.
+
+Botón Iniciar → empieza la cuenta regresiva.
+
+Botón Pausar.
+
+Botón Reiniciar → vuelve al valor inicial.
+
+Debe mostrar:
+
+El tiempo restante.
+
+Un historial de eventos: inicio, pausa, reinicio, finalización.
+
+Extras posibles:
+
+Bloquear el botón iniciar mientras esté corriendo.
+
+Cambiar color a rojo cuando queden menos de 5 segundos.
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+
+    <style>
+        #tiempo {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .rojo {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Temporizador Regresivo</h1>
+
+    <label>Segundos:</label>
+    <input type="number" id="inputSegundos" min="1">
+
+    <br><br>
+
+    <button id="btnIniciar">Iniciar</button>
+    <button id="btnPausar">Pausar</button>
+    <button id="btnReiniciar">Reiniciar</button>
+
+    <h2>Tiempo restante:</h2>
+    <p id="tiempo">0</p>
+
+    <h2>Historial</h2>
+    <ul id="historial"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

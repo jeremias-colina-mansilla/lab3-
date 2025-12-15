@@ -62,10 +62,12 @@ let nivel = "";
 if (prom < 10) nivel = "seco";
 else if (prom <= 30) nivel = "normal";
 else nivel = "lluvioso";
+// toFixed() se usa para formatear un número con una cantidad fija de decimales
+//  y devuelve un string, por lo que debe utilizarse solo para mostrar valores, no para realizar cálculos.
 
 // mostrar el resultado
 totalP.textContent = "Total: " + total;
-promedioP.textContent = "Promedio: " + prom.toFixed(2); // Aplicamos toFixed solo al mostrar
+promedioP.textContent = "Promedio: " + prom.toFixed(2); // Aplicamos toFixed 
 nivelP.textContent = "Nivel: " + nivel;
     
     
